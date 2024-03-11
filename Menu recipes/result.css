@@ -1,0 +1,228 @@
+:root {
+    --primColor: hwb(94 44% 47% / 0.534);
+    --secoColor: #394f64;
+    --cornerRad: 4px;
+    --scroll-behavior: smooth;
+  }
+
+  /*logo*/
+
+h1 {
+    text-align: center;
+    color: rgb(25, 77, 56);
+}
+
+a {
+    text-align: center;
+    color: rgb(17, 175, 109);
+    text-decoration: none;
+}
+
+a:hover{
+  color:rgb(168, 212, 66)
+}
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+}
+
+.site-header::after {
+    display: table;
+    clear: both;
+}
+
+.site-identity {
+    float: left;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .7em 0 .3em 0;
+    display: inline-block;
+}
+
+.site-identity img {
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+
+  /*Mother Body*/
+
+  body {
+    background-image: url("images/black-abstract.jpg");
+    background-attachment: scroll;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+    /* Navigation Menu*/
+
+* {
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(100,50,21,6);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+#toggleBar {
+  display: none;
+  margin: 0 auto;
+  background-color: #6d6943d3;
+  border-radius: 20px;
+  width: 55px;
+}
+
+#toggleBar:hover {
+  transform: scaleX(1.1);
+  background-color: #6d694384;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 20px 20px;
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  justify-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.btn a:hover {
+  border: none;
+  background: #6d694384;
+  padding: 20px 20px;
+  color: #000000;
+}
+
+.btn:active {
+  color: rgb(26, 80, 39);
+}
+
+#hide-btn {
+  display: none;
+}
+
+
+@media only screen and (max-width: 976px) {
+  #menu-list {
+    width: auto;
+    margin: 0 auto;
+  }
+  .btn {
+    display: block;
+  }
+
+  .btn a:hover {
+    padding: 10px;
+  }
+  #menu-list {
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    background: #6d69436a;
+    padding: 10px 20px;
+    color: #000000;
+    outline: 0px;
+  }
+  #menu-list {
+    display: none;
+  }
+
+  #toggleBar {
+    display: block;
+  }
+
+  #hide-btn{
+    display: block;
+    margin: 3px 80%;
+    background: rgba(0, 0, 0, 0.698);
+    color: #ffff;
+  }
+
+  #hide-btn:hover{
+    color:#000000;
+    background-color: #ffffff8a;
+  }
+}
+
+
+    /*Recipe Menu*/
+
+
+.recipe-menu ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+  grid-gap: 1rem;
+  padding-right: 30px;
+  margin-top: 24px;
+}
+
+ol li {
+  list-style: none;
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+}
+
+  /*Mail me*/
+
+.email{
+    background: transparent;
+    padding-top: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input {
+    color: #ffffff;
+    background: transparent;
+    border: 1px 0 0 3px;
+    height: 24px;
+    width: 175px;
+    border-radius: 10px;
+    border-color: #b9b794;
+  }
+button:hover{
+    color: rgb(114, 165, 144);
+  }
+
+button{
+    width: 60px;
+    height: 30px;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 10px;
+    border-color: #b9b794;
+
+  }
+
+.email-section{
+    color: #2e744d;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+
+.send-self{
+  padding-top: 3px;
+  padding-left: 166px;
+  border-radius: 10px;
+}
+
+.footer{
+  color: #ffffff;
+  font-size: 11px;
+  margin: 170px;
+  border-top: 1px solid #ffff;
+
+}
